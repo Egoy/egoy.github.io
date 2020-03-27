@@ -333,6 +333,7 @@ input[type="submit"] {
 	padding: 24px;
 	width: 200px;
 	text-align: right;
+	z-index: 2;
 }
 
 #menu a li {
