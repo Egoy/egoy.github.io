@@ -15,13 +15,13 @@
     <div class="main__container">
     <header class="banner">
         <div class="logo">
-            <h1>fc</h1>
+            <a href="#home"><h1>fc</h1></a>
         </div>
         <div class="sci">
             <ul class="sci__list">
                 <li class="sci__list-item"><a href="#"><img src="icons/Facebook.png" alt=""></a></li>
                 <li class="sci__list-item"><a href="#"><img src="icons/LinkedIN.png" alt=""></a></li>
-                <li class="sci__list-item"><a href="#"><img src="icons/Twitter.png" alt=""></a></li>
+                <li class="sci__list-item"><a href="https://twitter.com/egoyogi8" target="_blank"><img src="icons/Twitter.png" alt=""></a></li>
             </ul>
         </div>
     </header>
@@ -95,6 +95,13 @@
         });
         $('.bg-cover').click(function(){
             $('#menu').slideToggle(300);
+            $('.top').toggleClass('rotate');
+            $('.middle').toggleClass('rotate-back');
+            $('.menu-name').toggleClass('bump');
+            $('.bg-cover').toggleClass('reveal');
+        })
+        $('#menu a').click(function(){
+            $('#menu').slideToggle(500);
             $('.top').toggleClass('rotate');
             $('.middle').toggleClass('rotate-back');
             $('.menu-name').toggleClass('bump');
