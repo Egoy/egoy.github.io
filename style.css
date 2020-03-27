@@ -164,14 +164,30 @@ body {
 	font-size: var(--fsnormal);
 	color: var(--primary);
 	cursor: pointer;
+	line-height: 1px;
 }
 
 .container4__link:hover {
 	color: var(--secondary);
-	font-weight: var(--fwbold);
-	font-size: var(--fsbig);
 	background-color: var(--primary);
 }
+
+.container5__main {
+	display: grid;
+	grid-template-columns: 100px auto;
+	grid-gap: 20px;
+}
+
+.container5__input {
+	padding-bottom: 20px;
+}
+
+
+.container5__input:nth-child(6) {
+	height: 100px;
+	line-height: 28px;
+}
+
 
 /* Navigation */
 .bg-cover {
@@ -202,7 +218,7 @@ body {
 	width: 50px;
 	height: 100px;
 	overflow: auto;
-	left: calc(100% - 100px);
+	left: calc(100% - 70px);
 	bottom: 0;
 	cursor: pointer;
 }
@@ -222,7 +238,7 @@ body {
 
 #menu {
 	position: fixed;
-	left: calc(100% - 242px);
+	left: calc(100% - 230px);
 	bottom: 10px;
 	color: var(--primary);
 	display: none;
