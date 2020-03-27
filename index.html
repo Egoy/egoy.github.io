@@ -77,11 +77,11 @@
             <div class="hamb middle"></div>
         <div class="menu-name">MENU</div>
     <ul id="menu"> 
-            <a href="#"> <li>Home</li></a>
-            <a href="#aboutme"> <li>About Me</li></a>
-            <a href="#myskills"> <li>My Skills</li></a>
-            <a href="#myprojects"> <li>Projects</li></a>
-            <a href="#"> <li>Contact Me</li></a>
+            <a class="menu-links" href="#"> <li>Home</li></a>
+            <a class="menu-links" href="#aboutme"> <li>About Me</li></a>
+            <a class="menu-links" href="#myskills"> <li>My Skills</li></a>
+            <a class="menu-links" href="#myprojects"> <li>Projects</li></a>
+            <a class="menu-links" href="#"> <li>Contact Me</li></a>
     </ul>
     </a>
     <script>
@@ -99,9 +99,9 @@
             $('.middle').toggleClass('rotate-back');
             $('.menu-name').toggleClass('bump');
             $('.bg-cover').toggleClass('reveal');
-        })
-        $('#menu a').click(function(){
-            $('#menu').slideToggle(500);
+        });
+        $('.menu-links').click(function(){
+            $('#menu').slideToggle(300);
             $('.top').toggleClass('rotate');
             $('.middle').toggleClass('rotate-back');
             $('.menu-name').toggleClass('bump');
