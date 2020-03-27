@@ -172,23 +172,104 @@ body {
 	background-color: var(--primary);
 }
 
-.container5__main {
+.container5 {
+	width: 80%;
+}
+.container5__heading {
+	margin-bottom: 10px;
+}
+.container5__row {
+	position: relative;
+	width: 100%;
 	display: grid;
-	grid-template-columns: 100px auto;
-	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 }
-
-.container5__input {
-	padding-bottom: 20px;
+.container5__col {
+	position: relative;
+	width: 100%;
+	padding: 0 10px;
+	margin: 30px 0 10px;
+	transition: 0.5s;
 }
-
-
-.container5__input:nth-child(6) {
+.container5__inputbox {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	color: var(--primary);
+}
+.container5__inputbox input,
+.container5__inputbox textarea {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	font-size: 18px;
+	padding: 0 10px;
+	z-index: 1;
+}
+.container5__inputbox .text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 40px;
+	font-size: 18px;
+	padding: 0 10px;
+	display: block;
+	transition: 0.5s;
+	pointer-events: none;
+}
+.container5__inputbox input:focus + .text,
+.container5__inputbox input:valid + .text {
+	top: -35px;
+	left: -10px;
+}
+.container5 .line {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: var(--primary);
+	transition: 0.5s;
+	border-radius: 2px;
+	pointer-events: none;
+}
+.container5__inputbox input:focus ~ .line,
+.container5__inputbox input:valid ~ .line {
+	height: 100%;
+}
+.container5__inputbox.textarea {
+	position: relative;
+	width: 100%;
 	height: 100px;
-	line-height: 28px;
+	padding: 10px 0;
 }
-
-
+.container5__inputbox.textarea textarea {
+	height: 100%;
+	resize: none;
+}
+.container5__inputbox textarea:focus + .text,
+.container5__inputbox textarea:valid + .text {
+	top: -35px;
+	left: -10px;
+}
+.container5__inputbox textarea:focus ~ .line,
+.container5__inputbox textarea:valid ~ .line {
+	height: 100%;
+}
+input[type="submit"] {
+	border: none;
+	padding: 7px; 35px;
+	cursor: pointer;
+	outline: none;
+	background: var(--primary);
+	color: var(--secondary);
+	font-size: 18px;
+	border-radius: 2px;
+}
 /* Navigation */
 .bg-cover {
 	position: fixed;
