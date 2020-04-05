@@ -4,123 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,400i&d,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <script
-			  src="https://code.jquery.com/jquery-3.4.1.js"
-			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-              crossorigin="anonymous">
-    </script>
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+</script>
+<script src="js/jquery.easypiechart.js"></script>
+
+    <title>Document</title>
 </head>
 <body>
-    <div class="main__container">
-    <header class="banner">
-        <div class="logo">
-            <img src="images/mylogo.png" alt="">
+    <div class="main__logo">
+        <img src="images/mylogo.png" alt="">
+    </div>
+    <div class="main__container" id="home">
+        <div class="main__header" >
+            <h1>Francis Cangco</h1>
+            <p>front-end dev</p>
         </div>
-        <div class="sci">
-            <ul class="sci__list">
-                <li class="sci__list-item"><a href="#"><img src="icons/Facebook.png" alt=""></a></li>
-                <li class="sci__list-item"><a href="#"><img src="icons/LinkedIN.png" alt=""></a></li>
-                <li class="sci__list-item"><a href="https://twitter.com/egoyogi8" target="_blank"><img src="icons/Twitter.png" alt=""></a></li>
+        <div class="main__sci">
+            <ul>
+                <li><a href="#"><img src="icons/Facebook-b.png" alt=""></a></li>
+                <li><a href="#"><img src="icons/LinkedIN-b.png" alt=""></a></li>
+                <li><a href="https://twitter.com/egoyogi" target="_blank"><img src="icons/Twitter-b.png" alt=""></a></li>
             </ul>
         </div>
-    </header>
-    <div class="container1" id="#home">
-        <div class="container1-item">
-            <img src="images/egoy.png" alt="">
-        </div>
-            <div class="container1-item">
-                <h1 class="name">Francis Cangco</h1>
-                <p class="subname">front-end dev</p>
+    </div>
+    <div class="container" id="aboutme">
+        <div class="container__aboutme">
+            <div class="aboutme__box">
+                <div class="aboutme__text">
+                    <h1 class="aboutme__header header">about me</h1>
+                    <h2>I’m a Front-End Developer from the Philippines.</h2>
+                    <p>I enjoy taking complex problems and turning them into simple and beautiful designs. I always prioritize writing elegant and effecient code whether it’s HTML, CSS or Javascript. </p>
+                    <p>When I’m not coding, you’ll find me outside taking photos of anything that catches my attention or just playing Dota2 until dawn or just listening to music/podcast on my phone.</p>
+                </div>
+            </div>
+            <div class="aboutme__box">
+                <div class="aboutme__img">
+                    <img src="images/Portrait.jpg" alt="">
+                </div>
             </div>
         </div>
-    </main>
     </div>
-    <div class="sub__container container2" id="aboutme">
-        <h1 class="title container2__heading">about me</h1>
-        <h2>I’m a <span class="subtitle">Front-End Developer</span> from the Philippines.</h2>
-        <p>I enjoy taking complex problems and turning them into simple and beautiful designs. I always prioritize writing elegant and effecient code whether it’s HTML, CSS or jQuery. </p>
-        <p>When I’m not coding, you’ll find me outside taking photos of anything that catches my attention or just playing Dota2 until dawn or just listening to music/podcast on my phone.</p>
-    </div>
-    <div class="sub__container container3" id="myskills">
-        <h1 class="title container3__heading">my skills</h1>
-        <ul class="container3--list">
-            <li><a href="" class="container3--item">HTML</a></li>
-            <li><a href="" class="container3--item">CSS</a></li>
-            <li><a href="" class="container3--item">JAVASCRIPT</a></li>
-            <li><a href="" class="container3--item">PHP</a></li>
-            <li><a href="" class="container3--subitem">Adobe Illustrator</a></li>
-            <li><a href="" class="container3--subitem">Photoshop</a></li>
-            <li><a href="" class="container3--subitem">Figma</a></li>
-        </ul>
-    </div>
-    <div class="sub__container container4" id="myprojects">
-        <h1 class="title container4__heading">my projects</h1>
-        <div class="container4__main">
-            <a href="#" class="container4__link">
-                    <p>Customer Database</p>
-                    <p>Web Application</p>
-            </a>
-            <a href="#" class="container4__link">
-                    <p>Project 2</p>
-            </a>
-            <a href="#" class="container4__link">
-                    <p>Project 3</p>
-            </a>
-            <a href="#" class="container4__link">
-                    <p>Project 4</p>
-            </a>
+    <div class="container" id="myskills">
+        <h1 class="header myskills__header">my skills</h1>
+        <div class="container__myskills">    
+            <div class="myskills__box">
+                <div class="box__container">
+                    <div class="myskills__chart" data-percent="90" data-scale-color="#9466FF">90%</div>
+                    <h2>HTML</h2>
+                </div>
+                <div class="box__container">
+                    <div class="myskills__chart" data-percent="80" data-scale-color="#9466FF">80%</div>
+                    <h2>CSS</h2>
+                </div>
+                <div class="box__container">
+                    <div class="myskills__chart" data-percent="50" data-scale-color="#9466FF">50%</div>
+                    <h2>Javascript</h2>
+                </div>
+                <div class="box__container">
+                    <div class="myskills__chart" data-percent="30" data-scale-color="#9466FF">30%</div>
+                    <h2>PHP</h2>
+                </div>
+            </div>
         </div>
+        <div class="myskills__sub">
+            <h2>also proficient in:</h2>
+            <div  id="typed-strings">
+                <!-- <p>Figma</p>
+                <p>Adobe Photoshop</p>
+                <p>Adobe Illustrator</p>
+                <p>Git</p> -->
+              </div>
+              <span class="myskills__text" id="typed"></span>
     </div>
-    <div class="sub__container container5" id="contact">
-        <h1 class="title container5__heading">contact me</h1>
-            <div class="container5__row">
-                <div class="container5__col">
-                    <div class="container5__inputbox">
-                        <input type="text" name="" required="required">
-                        <span class="text">Name</span>
-                        <span class="line"></span>
+    <div class="container" id="myprojects">
+        <h1 class="header myskills__header">my projects</h1>
+    </div>
+    <div class="container contact_container" id="contact">
+        <h1 class="contact__heading header">contact me</h1>
+            <div class="contact__box">
+                <div class="contact__row">
+                    <div class="contact__col">
+                        <div class="contact__inputbox">
+                            <input type="text" name="" required="required">
+                            <span class="text">Name</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__row">
+                    <div class="contact__col">
+                        <div class="contact__inputbox">
+                            <input type="text" name="" required="required">
+                            <span class="text">Email</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__row">
+                    <div class="contact__col">
+                        <div class="contact__inputbox textarea">
+                            <textarea required="required"></textarea>
+                            <span class="text">Your message. . .</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__row">
+                    <div class="contact__col">
+                        <input type="submit" value="Send">
                     </div>
                 </div>
             </div>
-            <div class="container5__row">
-                <div class="container5__col">
-                    <div class="container5__inputbox">
-                        <input type="text" name="" required="required">
-                        <span class="text">Email</span>
-                        <span class="line"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="container5__row">
-                <div class="container5__col">
-                    <div class="container5__inputbox textarea">
-                        <textarea required="required"></textarea>
-                        <span class="text">Your message. . .</span>
-                        <span class="line"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="container5__row">
-                <div class="container5__col">
-                    <input type="submit" value="Send">
-                </div>
-            </div>
     </div>
+    <!-- Navigation -->
     <div class="bg-cover" class="none"></div>
     <a class="hamburger-shell">
         <div class="hamb top"></div>
             <div class="hamb middle"></div>
         <div class="menu-name">MENU</div>
     <ul id="menu"> 
-            <a class="menu-links" href="#"> <li>Home</li></a>
+            <a class="menu-links" href="#home"> <li>Home</li></a>
             <a class="menu-links" href="#aboutme"> <li>About Me</li></a>
             <a class="menu-links" href="#myskills"> <li>My Skills</li></a>
             <a class="menu-links" href="#myprojects"> <li>Projects</li></a>
             <a class="menu-links" href="#contact"> <li>Contact Me</li></a>
     </ul>
     </a>
-    <script>
+</body>
+<script>
     $(document).ready(function(){
         $('.hamburger-shell').click(function(){
             $('#menu').slideToggle(300);
@@ -145,5 +160,25 @@
         })
     });
     </script>
-</body>
+    <script>
+        $(function() {
+            $('.myskills__chart').easyPieChart({
+                scaleColor: false,
+                size: 150,
+                barColor: '#9466FF',
+                lineWidth: 15,
+                trackColor: '#33333',
+                lineCap: 'circle',
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['^1000 Figma', '^1000 Git', '^1000 Adobe Photoshop', '^1000 Adobe Illustrator'],
+            typespeed: 50,
+            loop: true,
+            backSpeed: 100,
+        });
+      </script>
 </html>
