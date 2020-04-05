@@ -508,9 +508,8 @@ input[type="submit"] {
 	}
 	.main__sci {
 		position: fixed;
-		top: 0;
-		right: 0;
-		padding: 20px 20px 0 0;
+		bottom: 0;
+		padding-bottom: 20px;
 	}
 	/* Navi */ 
 	.hamburger-shell {
