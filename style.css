@@ -118,7 +118,7 @@ body {
     font-weight: var(--fwbold);
 }
 
-#section10 a span {
+.demo a span {
     position: absolute;
     bottom: 15px;
     left: 50%;
@@ -129,7 +129,7 @@ body {
     border-radius: 50px;
     box-sizing: border-box;
   }
-  #section10 a span::before {
+.demo a span::before {
     position: absolute;
     bottom: 25px;
     left: 50%;
