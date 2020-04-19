@@ -109,17 +109,23 @@ body {
     font-weight: var(--fwlight);
 }
 .banner__cta {
-    margin-top: 12px;
+      display: flex;
+    flex-wrap: wrap;
 }
 .banner__cta a{
+    padding: 10px;
     background: var(--primary);
-    padding: 1em;
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 3px;
     font-size: .8em;
     font-weight: var(--fwbold);
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.banner__cta a:nth-child(2) {
+
 }
 
 .scroll__icon a span {
@@ -181,12 +187,22 @@ body {
   }
 
 .container {
+  margin: 30px 4% 30px 4%;
   padding: 0 4% 0 4%;
   height: auto;
+
+}
+.aboutme {
+  background: var(--first);
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow:  5px 5px 10px #878787, 
+               -5px -5px 10px #ffffff;
 }
 .title {
   font-weight: 700;
-  font-size: 3em;
+  font-size: 2.5em;
+  text-align: center;
 }
 .aboutme__title {
   font-weight: 400;
@@ -201,4 +217,12 @@ body {
 }
 .aboutme__text p::first-letter {
   margin-left: 15px;
+}
+
+.myworks__container {
+  width: 100%;
+}
+
+.myworks__box {
+
 }
