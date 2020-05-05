@@ -1,16 +1,39 @@
 .projects {
-  width: 90%;
-  margin: auto;
-  min-height: 90vh;
-  @include flex(space-between, center, row);
-  text-align: center;
-  flex-wrap: wrap;
-  h2 {
-    margin: 5rem;
-  }
+	width: 90%;
+	margin: auto;
+	min-height: 90vh;
+	@include flex(space-between, center, row);
+	text-align: center;
+	flex-wrap: wrap;
+	h2 {
+		margin: 4rem;
+	}
+	img {
+		width: 100%;
+		object-fit: cover;
+	}
 }
 
 .travelly,
-.elena {
-  flex: 1 1 40rem;
+.photo,
+.donut {
+	flex: 1 1 60rem;
+	margin: 2rem 3rem;
+}
+
+.git-links {
+	margin: 4rem 3rem;
+}
+.git-links a {
+	margin: 0rem 1rem;
+	font-size: $header4;
+	border: 3px solid black;
+	padding: 1.5rem 1rem;
+	border-radius: 12px;
+	text-transform: uppercase;
+	color: $gradient;
+	&:hover {
+		background: black;
+		color: white;
+	}
 }
